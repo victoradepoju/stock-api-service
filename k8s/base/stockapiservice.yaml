@@ -39,11 +39,11 @@ spec:
             - name: SPRING_DATASOURCE_PASSWORD
               value: stockpass
             - name: SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT
-              value: "60000" # 60 seconds
+              value: "600000" # 600 seconds
             - name: SPRING_DATASOURCE_HIKARI_INITIALIZATION_FAIL_TIMEOUT
-              value: "60000"
+              value: "600000"
             - name: SPRING_DATASOURCE_HIKARI_VALIDATION_TIMEOUT
-              value: "5000"
+              value: "50000"
 #            - name: APP_MARKETSTACK_API_KEY
 #              valueFrom:
 #                secretKeyRef:
