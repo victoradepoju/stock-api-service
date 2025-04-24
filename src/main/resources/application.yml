@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: stock-api-service
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      group-id: stock-price-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.value.default.type: com.group4.stock_api_service.model.StockPriceEntity
+        spring.json.trusted.packages: "*"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stockdb
+    username: stockuser
+    password: stockpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+app:
+  kafka:
+    topic: stock-prices
+
+server:
+  port: 8082
