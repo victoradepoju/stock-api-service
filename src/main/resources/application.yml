@@ -11,7 +11,7 @@ spring:
         spring.json.value.default.type: com.group4.stock_api_service.model.StockPriceEntity
         spring.json.trusted.packages: "*"
   datasource:
-    url: jdbc:postgresql://35.223.9.138:5432/stockdb
+    url: jdbc:postgresql://35.223.9.138:5432/stock-db
     username: stockuser
     password: stockpass
     driver-class-name: org.postgresql.Driver
