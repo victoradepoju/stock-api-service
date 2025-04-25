@@ -1,6 +1,6 @@
 spring:
   application:
-    name: stock-api-service
+    name: stock-api
   kafka:
     bootstrap-servers: localhost:29092
     consumer:
