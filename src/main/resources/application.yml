@@ -15,6 +15,10 @@ spring:
     username: stockuser
     password: stockpass
     driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 5
+      initialization-fail-timeout: 60000
   jpa:
     hibernate:
       ddl-auto: update
