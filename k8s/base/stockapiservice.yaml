@@ -67,3 +67,4 @@ spec:
     team: stock-api
     tier: backend
   type: LoadBalancer
+
