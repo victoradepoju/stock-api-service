@@ -132,4 +132,4 @@ The service logs:
 - Database operations
 - API requests
 - Error conditions
-- 
+ 
